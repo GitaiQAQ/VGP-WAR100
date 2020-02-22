@@ -1,0 +1,2 @@
+PROGS_GPL_SUBDIRS=libgsasl busybox-1.14.1 nsbbox iptables-1.4.7 mathopd-1.6 udhcpcd pppd.alpha wireless_tools_realtek_29 iproute2-2.6.33 dnsmasq ecmh iputils
+PROGS_PRIV_SUBDIRS= xmldb3 rgbin turbonat.26 mrd updateleases portt lld2d Netbios servd cgibin.aries updatewifistats hostapd_wps

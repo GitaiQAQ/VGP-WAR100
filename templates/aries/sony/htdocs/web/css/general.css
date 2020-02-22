@@ -1,0 +1,432 @@
+div.maincontainer
+{
+	margin-left: 0px;
+	width: 827px;
+	background-image: url(/pic/bg_sony.png);	
+}
+
+div.headercontainer
+{
+	border-style: none;
+	width: 827px;
+	height: 79px;
+}
+
+div.headerfoot
+{
+	border-style: none;
+	width: 827px;
+	height: 30px;
+	//background-image: url(/pic/bg_sony.png);	
+	padding: 5px 0px 5px 0px; 
+	text-align:right;
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color:#d4d4d4;
+}
+
+div.footercontainer
+{
+	width: 827px;
+	//height: 30px;
+	//background-image: url(/pic/bg_sony.png);
+	font-family: Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color:#7d7d7d;
+	border-top: solid 1Px #2e2e2e;	
+}
+
+
+div.simplecontainer
+{
+	clear: both;
+	width: 827px;
+	//background-image: url(/pic/bg_sony.png);
+	//background-repeat: repeat-y;
+}
+
+div.simplecontainer div.simplebody
+{
+	clear: both;
+	margin-left: 21px;
+	border-style: solid;
+	border-width: 0px 2px 0px 0px;	
+}
+
+div.simplecontainer div.blackbox
+{
+	width: 785px;
+	background-color: #DFDFDF;
+	border-style: solid;
+	border-width: 1px;
+	font-family: Tahoma;
+	font-size: 12px;
+}
+div.simplecontainer div.blackbox h1
+{
+	background-image: url(/pic/btn_menu_sel.png);
+	background-repeat: repeat-x;
+	color:#383838;
+	font-family: Tahoma;
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 7px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	height: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+}
+div.blackbox div.message, p
+{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+div.blackbox div.emptyline
+{
+	border-width: 0px 3px 3px 3px;
+	border-style: solid;
+	border-color: #ffffff;
+	background-color: #212121;
+	height: 24px;
+}
+
+div.loginbox
+{
+	clear: both;
+	height: 30px;
+	border-width: 0px 3px 0px 3px;
+	border-style: solid;
+	border-color: #ffffff;		
+	background-color: #212121;
+	color:#d4d4d4;
+}
+
+div.loginbox span.mode
+{
+	float: left;
+	text-align: right;
+	font-weight: bold;
+	margin-top: 4px;
+	padding-left: 25%;
+}
+
+div.loginbox span.name
+{
+	float: right;
+	font-weight: bold;
+	margin-top: 4px;
+	/*padding-left: 25%;*/
+}
+div.loginbox span.delimiter
+{
+	width: 3%;
+	float: right;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 4px;
+}
+
+div.loginbox span.value
+{
+	width: 62%;
+	float: right;
+	text-align: left;
+}
+
+div.loginbox span.value input
+{
+ 	width: 40%;
+}
+
+div.simplebody div.emptyline
+{
+	height: 20px;
+}
+
+div.loginbox span.loginbutton
+{
+	width: 62%;
+	float: right;
+}
+
+div.loginbox span.message
+{
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	padding-top:2px;
+	width:100%;
+}
+
+div.loginbox span.loginbutton input 
+{
+	background-image: url(/pic/menu_sel.png); 
+	background-color: #6a89b5;
+	border-style: solid; 
+	border-width: 2px;
+	border-color: #c8d6e8 #1d2569 #000000 #aed9f2;
+	margin: 1px; 
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;	
+	height: 20px;		
+	color: #000000; 
+	cursor: pointer; 
+}
+
+div.loginbox span.message input 
+{
+	background-image: url(/pic/menu_sel.png); 
+	background-color: #6a89b5;
+	border-style: solid; 
+	border-width: 2px;
+	border-color: #c8d6e8 #1d2569 #000000 #aed9f2;
+	margin: 1px; 
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;	
+	height: 20px;
+	color: #000000; 
+	cursor: pointer; 
+}
+
+div.leftmenucontainer 
+{
+	clear: both;	
+	width: 827px;
+}
+
+div.leftmenucontainer  div.leftmenu
+{
+ 	float: left;
+	color: #383838;
+	width: 242px;
+	height: 100%;
+	font-family: Tahoma;
+	font-size: 15px;
+	font-weight: bold;	
+	padding-left:21px;
+	padding-right:20px;
+	//background-image: url(/pic/bg_sony.png);
+	
+}
+
+div.leftmenucontainer  div.leftmenu div span.menuheader
+{
+	display : block;
+	background-image: url(/pic/btn_menu_sel.png);
+	background-repeat: repeat-x;
+	padding:1px 1px 0px 10px; 
+	border:solid 1px #807f7f;
+	height:20px;
+}
+
+div.leftmenucontainer div.leftmenu div a
+{
+	color: #d4d4d4;
+	display: block;
+	padding: 5px 0px 5px 10px; 
+	text-decoration: none;
+	font-weight: bold;
+	font: 13px Arial;
+	margin:0px 1px 0px 1px; 
+	background-color:#212121;
+}
+
+
+div.leftmenucontainer div.leftmenu div a:visited
+{
+	color: #d4d4d4;
+}
+
+div.leftmenucontainer div.leftmenu div a:hover
+{
+	text-decoration: underline;
+}
+
+div.leftmenucontainer div.mainbody
+{
+	width: 544px; 
+	height: 100%; 
+	overflow:auto;
+	//background-image: url(/pic/bg_sony.png);
+	//padding-right:10px;
+	//margin-right:10px;
+}
+
+
+div.mainbody div.blackbox
+{
+	margin-bottom: 30px;
+	margin-right: 10px;
+	background-color:#535353;
+}
+
+div.blackbox h1
+{
+	background-image: url(/pic/menu_sel.png);
+	background-repeat: repeat-x;
+	color:#535353;
+	font-family: Tahoma;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	height: 30px;
+	//margin-top: 0px;
+	//margin-bottom: 2px;
+	margin: 0px 0px 2px 0px;
+
+}
+
+div.blackbox div.graybox
+{
+	margin: 5px 0px 0px 1px;
+	border-style: solid; 
+	border-width: 0px 1px 20px 1px ;
+	border-color: #535353;	
+	background-color:#535353;
+	color:#d4d4d4;
+	font-family: Tahoma;
+	font-size: 13px;	
+}
+
+
+div.graybox h2
+{
+	background-color:#696969;
+	color:#FFFFFF;
+	font-family: Tahoma;
+	font-size: 16px;
+	font-weight: bold;		
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	height: 20px;
+	margin-bottom: 0px;
+
+}
+
+div.graybox div.textinput_l
+{	
+	border-top:solid 1px #000000;
+	border-right:solid 1px #000000;
+	background-color:#212121;
+	padding: 3px 10px 3px;
+	float: left;
+	width:160px;
+	height: 25px;
+}
+
+div.graybox  div.textinput_r
+{
+	border-top:solid 1px #000000;	
+	background-color:#212121;	
+	padding: 3px 0px 3px 10px;
+	width: 495px;
+	height: 25px;
+}
+
+div.textinput_l span.name
+{
+	font-family: sans-serif !important;/* Firefox¡BIE7 support*/
+	font-family: Tahoma;
+	font-size: 12px;
+	text-align: right;	
+	vertical-align: middle;	
+}
+
+div.textinput_r span.value
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	text-align: left;
+	vertical-align: middle;		
+	padding-left: 10px;
+}
+
+/*==20130325 jack add new css form*/
+div.textinput_r span.value select
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+div.textinput_r span.value input
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+
+
+/*==20121002 jack add new css form*/
+div.centerline_w
+{
+	text-align: center;
+}
+
+div.emptyline_w
+{
+	background-color:#535353;
+	height: 8px;
+}
+
+div.centerline_w input
+{
+	background-image: url(/pic/btn_menu_sel_05.png);
+	background-color: #6A89B5;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #C8D6E8 #1D2569 black #AED9F2;
+	margin: 1px;
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: bold;
+	height: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+table.general
+{
+	border-collapse: collapse;
+	margin-right:-1px;
+	margin-left:-1px;
+    background-color: #212121;
+}
+
+table.general td
+{
+	border-style:solid;
+	border-width:1px;
+}
+
+
+
+
+
+div.graybox hr
+{
+	margin-top: 0px;
+	border:none;
+	border-top:1px solid #000000;
+	height:0;
+}
