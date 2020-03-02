@@ -46,6 +46,8 @@ Step 3. Building the image
  
 ## Similar Projects
 
+* [feryw/DIR600B2](https://github.com/feryw/DIR600B2)
+
 * [D-Link DAP-1522 Rev. B](https://github.com/codeworkx/dlink_dap1522b)
 
 * [DIR-850L A1](https://github.com/coolshou/DIR-850L_A1)
