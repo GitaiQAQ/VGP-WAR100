@@ -43,3 +43,15 @@ Step 3. Building the image
 	 
   5) After make successfully, you will find the image file in ./images/.
  
+ 
+## Similar Projects
+
+* [D-Link DAP-1522 Rev. B](https://github.com/codeworkx/dlink_dap1522b)
+
+* [DIR-850L A1](https://github.com/coolshou/DIR-850L_A1)
+
+* [D-Link DWR-966 v1.0.3CP](https://github.com/brunompena/dwr-966)
+
+* [WD MyNet N900](https://github.com/patrick-ken/MyNet_N900)
+
+More project can search by keywords "This file will show you how to build the GPL linux system."
