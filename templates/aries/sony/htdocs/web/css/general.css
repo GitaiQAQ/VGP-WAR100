@@ -1,21 +1,21 @@
 div.maincontainer
 {
-	margin-left: 0px;
-	width: 827px;
+	margin: auto;
+	min-height: 100vh;
 	background-image: url(/pic/bg_sony.png);	
 }
 
 div.headercontainer
 {
 	border-style: none;
-	width: 827px;
-	height: 79px;
 }
-
+div.headercontainer img {
+	width: 100%;
+	height: 80px;
+}
 div.headerfoot
 {
 	border-style: none;
-	width: 827px;
 	height: 30px;
 	//background-image: url(/pic/bg_sony.png);	
 	padding: 5px 0px 5px 0px; 
@@ -28,9 +28,8 @@ div.headerfoot
 
 div.footercontainer
 {
-	width: 827px;
-	//height: 30px;
-	//background-image: url(/pic/bg_sony.png);
+	height: 30px;
+	background-image: url(/pic/bg_sony.png);
 	font-family: Tahoma;
 	font-size: 12px;
 	font-weight: bold;
@@ -42,7 +41,8 @@ div.footercontainer
 div.simplecontainer
 {
 	clear: both;
-	width: 827px;
+	max-width: 827px;
+	margin: auto;
 	//background-image: url(/pic/bg_sony.png);
 	//background-repeat: repeat-y;
 }
@@ -206,7 +206,8 @@ div.loginbox span.message input
 div.leftmenucontainer 
 {
 	clear: both;	
-	width: 827px;
+	max-width: 1200px;
+	margin: auto;
 }
 
 div.leftmenucontainer  div.leftmenu
@@ -259,7 +260,8 @@ div.leftmenucontainer div.leftmenu div a:hover
 
 div.leftmenucontainer div.mainbody
 {
-	width: 544px; 
+	max-width: 800px;
+	margin: auto;
 	height: 100%; 
 	overflow:auto;
 	//background-image: url(/pic/bg_sony.png);

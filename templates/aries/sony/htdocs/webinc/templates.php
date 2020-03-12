@@ -59,6 +59,7 @@ function draw_menu($menuString, $menuLink, $delimiter)
 <html>
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" /><!--not use IE8 compality-->
+	<link href="/css/normalize.min.css" rel="stylesheet">
 <?
 	if ($TEMP_STYLE!="progress") echo '\t<link rel="stylesheet" href="/css/general.css" type="text/css">\n';			
 	if ($TEMP_STYLE=="support") echo '\t<link rel="stylesheet" href="/css/support.css" type="text/css">\n';
@@ -732,7 +733,7 @@ if ($TEMP_STYLE=="complex" || $TEMP_STYLE=="support")
 			<div id="Main_Title" style="position:absolute; margin-top:-50px; margin-left:20px; font-size:24px; font-weight:bold; font-family:Tahoma; color:white;">
 				<?echo I18N("h","VAIO Wireless Router");?>
 			</div>
-			<div id="Second_Title" style="position:absolute; margin-top:-50px; margin-left:652px; font-size:24px; font-weight:bold; font-family:Tahoma; color:white">
+			<div id="Second_Title" style="position:absolute; margin-top:-50px; margin-left:calc( 100% - 190px); font-size:24px; font-weight:bold; font-family:Tahoma; color:white">
 				<?echo "VGP-WAR100";?>
 			</div>
 		</span>
