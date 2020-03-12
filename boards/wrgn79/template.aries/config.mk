@@ -3,10 +3,10 @@
 ############################################################################
 
 MYNAME	:= WRG-N79
-MKSQFS  := ./tools/squashfs-tools-4.0_realtek/mksquashfs
+MKSQFS  := mksquashfs
 SEAMA	:= ./tools/seama/seama
 PIMGS	:= ./tools/buildimg/packimgs
-LZMA	:= ./tools/lzma/lzma
+LZMA	:= lzma
 CVIMG	:= ./tools/realtek/cvimg
 MYMAKE	:= $(Q)make V=$(V) DEBUG=$(DEBUG)
 FWDEV	:= /dev/mtdblock/1
@@ -25,13 +25,14 @@ fakeroot_rootfs_image:
 	@rm -f fakeroot.rootfs.img
 	@./progs.board/template.aries/makedevnodes rootfs
 #	@./tools/sqlzma/sqlzma-3.2-443-r2/mksquashfs rootfs fakeroot.rootfs.img -be
-	@./tools/squashfs-tools-4.0_realtek/mksquashfs rootfs fakeroot.rootfs.img -comp lzma -always-use-fragments
+	@mksquashfs rootfs fakeroot.rootfs.img -comp lzma -always-use-fragments
 .PHONY: rootfs_image
 
 #############################################################################
 # The real image files
 
-$(ROOTFS_IMG): ./tools/squashfs-tools-4.0_realtek/mksquashfs
+$(ROOTFS_IMG):
+#./tools/squashfs-tools-4.0_realtek/mksquashfs
 	@echo -e "\033[32m$(MYNAME): building squashfs (LZMA)!\033[0m"
 	$(Q)make clean_CVS
 	$(Q)fakeroot make -f progs.board/template.aries/config.mk fakeroot_rootfs_image
@@ -48,8 +49,8 @@ $(KERNEL_IMG): ./tools/lzma/lzma ./tools/realtek/cvimg $(KERNELDIR)/vmlinux
 $(KERNELDIR )/vmlinux:
 	$(MYMAKE) kernel
 
-./tools/squashfs-tools-4.0_realtek/mksquashfs:
-	$(Q)make -C ./tools/squashfs-tools-4.0_realtek
+#./tools/squashfs-tools-4.0_realtek/mksquashfs:
+#	$(Q)make -C ./tools/squashfs-tools-4.0_realtek
 
 ./tools/seama/seama:
 	$(Q)make -C ./tools/seama
@@ -58,7 +59,8 @@ $(KERNELDIR )/vmlinux:
 	$(Q)make -C ./tools/buildimg
 
 ./tools/lzma/lzma:
-	$(Q)make -C ./tools/lzma
+	@echo -e "LZMA MAKE ============================"
+	#$(Q)make -C ./tools/lzma
 
 ./tools/realtek/cvimg:
 	$(Q)make -C ./tools/realtek
@@ -70,7 +72,7 @@ kernel_image:
 	$(MYMAKE) $(KERNEL_IMG)
 
 rootfs_image:
-	@echo -e "\033[32m$(MYNAME): creating rootfs image ...\033[0m"
+	@echo -e "\033[32m$(MYNAME): creating rootfs image ...${MYMAKE} ${ROOTFS_IMG}\033[0m"
 	$(Q)rm -f $(ROOTFS_IMG)
 	$(MYMAKE) $(ROOTFS_IMG)
 
@@ -84,7 +86,7 @@ rootfs_image:
 
 squashfs_clean:
 	@echo -e "\033[32m$(MYNAME): cleaning squashfs ...\033[0m"
-	$(Q)make -C ./tools/squashfs-tools-4.0_realtek  clean
+#	$(Q)make -C ./tools/squashfs-tools-4.0_realtek  clean
 
 kernel_target:
 	$(Q)rm -f $(KERNELDIR)/arch/rlx/target 2>/dev/null

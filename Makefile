@@ -106,7 +106,7 @@ all:
 
 all_with_kernel:
 	@echo -e "\033[32mStart building images (with kernel rebuild)...\033[0m"
-	$(Q)rm -f buildno
+#	$(Q)rm -f buildno
 	$(Q)make V=$(V) kernel
 	$(Q)make V=$(V) progs_prepare
 	$(Q)make V=$(V) progs
@@ -116,7 +116,7 @@ all_with_kernel:
 
 all_without_kernel ui:
 	@echo -e "\033[32mStart building images (without kernel rebuild)...\033[0m"
-	$(Q)rm -f buildno
+#	$(Q)rm -f buildno
 	$(Q)make V=$(V) progs_prepare
 	$(Q)make V=$(V) progs
 	$(Q)make V=$(V) progs_install

@@ -418,8 +418,7 @@ ifeq ($(config-targets),1)
 # used for 'make defconfig'
 -include $(srctree)/arch/$(ARCH)/Makefile
 export KBUILD_DEFCONFIG
-
-config %config: scripts_basic outputmakefile FORCE
+%config: scripts_basic outputmakefile FORCE
 	$(Q)mkdir -p include
 	$(Q)$(MAKE) $(build)=scripts/kconfig $@
 	$(Q)$(MAKE) -C $(srctree) KBUILD_SRC= .kernelrelease
@@ -1267,7 +1266,7 @@ endif
 	$(Q)$(MAKE) $(build)=$(build-dir) $(target-dir)$(notdir $@)
 
 # Modules
-/ %/: prepare scripts FORCE
+%/: prepare scripts FORCE
 	$(Q)$(MAKE) KBUILD_MODULES=$(if $(CONFIG_MODULES),1) \
 	$(build)=$(build-dir)
 %.ko: prepare scripts FORCE
